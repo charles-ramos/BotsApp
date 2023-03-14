@@ -210,3 +210,5 @@ setInterval(() => {
 
     startSock();
 })().catch(err => console.log('[MAINERROR] : %s', chalk.redBright.bold(err)));;
+
+require('http').createServer((_, res) => res.end('Thank you!')).listen(8080);
