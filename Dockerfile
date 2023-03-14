@@ -8,7 +8,8 @@ WORKDIR /BotsApp
 
 RUN git init --initial-branch=multi-device
 
-RUN git remote add origin https://github.com/Prince-Mendiratta/BotsApp.git
+# uncommenting this as it throws error in docker build
+# RUN git remote add origin https://github.com/Prince-Mendiratta/BotsApp.git
 
 RUN git fetch origin multi-device
 
